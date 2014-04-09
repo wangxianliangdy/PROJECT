@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"  
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ 
+ 
+ 
+         <!-- ********后台-注册servlet******* -->
+ 
+  <servlet>
+    <servlet-name>adminLoginServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.AdminLoginServlet</servlet-class>
+ </servlet>
+  
+  <servlet>
+   <servlet-name>showGoodsListUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.ShowGoodsListUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>selectGoodsServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.SelectGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addNewGoodsServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.AddNewGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteGoodsServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.DeleteGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updateGoodsUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.UpdateGoodsUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updateGoodsServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.UpdateGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updatePasswordUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.UpdatePasswordUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addNewAdminServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.AddNewAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showAllAdminUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.ShowAllAdminUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updatePasswordServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.UpdatePasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showGoodsDetailUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.ShowGoodsDetailUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteAdminServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.DeleteAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showOrderListUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.ShowOrderListUIServlet</servlet-class>
+  </servlet>
+
+  
+  
+  <!-- 前台servlet注册 -->
+   <servlet>
+    <servlet-name>customerLoginServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.CustomerLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>registerNewCustomerServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.RegisterNewCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>frontIndexUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.FrontIndexUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addGoodsToCartServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.AddGoodsToCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showCartUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.ShowCartUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>frontShowMessageUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.FrontShowMessageUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>clearCartServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.ClearCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>renewCartServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.RenewCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteGoodsFromCartServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.DeleteGoodsFromCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>orderConfirmUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.OrderConfirmUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>checkoutServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.CheckoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showOrderDetailUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.ShowOrderDetailUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>daemonShowMessageUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.DaemonShowMessageUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>selectOrderServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.SelectOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updateStatusServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.action.UpdateStatusServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showAllCustomerUIServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.ShowAllCustomerUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterNameServlet</servlet-name>
+    <servlet-class>edu.imti.eshop.ge.ui.RegisterNameServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- *******后台-servlet映射******** -->
+
+  <servlet-mapping>
+    <servlet-name>adminLoginServlet</servlet-name>
+    <url-pattern>/daemon/admin/adminLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showGoodsListUIServlet</servlet-name>
+    <url-pattern>/daemon/servlet/showGoodsListUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectGoodsServlet</servlet-name>
+    <url-pattern>/daemon/servlet/selectGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addNewGoodsServlet</servlet-name>
+    <url-pattern>/daemon/servlet/addNewGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteGoodsServlet</servlet-name>
+    <url-pattern>/daemon/servlet/deleteGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateGoodsUIServlet</servlet-name>
+    <url-pattern>/daemon/servlet/updateGoodsUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateGoodsServlet</servlet-name>
+    <url-pattern>/daemon/servlet/updateGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updatePasswordUIServlet</servlet-name>
+    <url-pattern>/daemon/servlet/updatePasswordUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addNewAdminServlet</servlet-name>
+    <url-pattern>/daemon/servlet/addNewAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showAllAdminUIServlet</servlet-name>
+    <url-pattern>/daemon/servlet/showAllAdminUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updatePasswordServlet</servlet-name>
+    <url-pattern>/daemon/servlet/updatePasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showGoodsDetailUIServlet</servlet-name>
+    <url-pattern>/daemon/servlet/showGoodsDetailUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteAdminServlet</servlet-name>
+    <url-pattern>/daemon/servlet/deleteAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showOrderListUIServlet</servlet-name>
+    <url-pattern>/daemon/servlet/showOrderListUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showOrderDetailUIServlet</servlet-name>
+    <url-pattern>/daemon/servlet/showOrderDetailUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>daemonShowMessageUIServlet</servlet-name>
+    <url-pattern>/daemon/admin/daemonShowMessageUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectOrderServlet</servlet-name>
+    <url-pattern>/daemon/servlet/selectOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!-- 前台，servlet映射 -->
+  <servlet-mapping>
+    <servlet-name>customerLoginServlet</servlet-name>
+    <url-pattern>/front/login/customerLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>registerNewCustomerServlet</servlet-name>
+    <url-pattern>/front/login/registerNewCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontIndexUIServlet</servlet-name>
+    <url-pattern>/front/limit/frontIndexUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addGoodsToCartServlet</servlet-name>
+    <url-pattern>/front/limit/addGoodsToCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showCartUIServlet</servlet-name>
+    <url-pattern>/front/limit/showCartUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontShowMessageUIServlet</servlet-name>
+    <url-pattern>/front/login/frontShowMessageUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>clearCartServlet</servlet-name>
+    <url-pattern>/front/limit/clearCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>renewCartServlet</servlet-name>
+    <url-pattern>/front/limit/renewCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteGoodsFromCartServlet</servlet-name>
+    <url-pattern>/front/limit/deleteGoodsFromCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>orderConfirmUIServlet</servlet-name>
+    <url-pattern>/front/limit/orderConfirmUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>checkoutServlet</servlet-name>
+    <url-pattern>/front/limit/checkoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateStatusServlet</servlet-name>
+    <url-pattern>/daemon/servlet/updateStatusServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showAllCustomerUIServlet</servlet-name>
+    <url-pattern>/daemon/servlet/showAllCustomerUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterNameServlet</servlet-name>
+    <url-pattern>/RegisterNameServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+ 
+   <!-- 配置过滤器：处理中文乱码的过滤器 -->
+   <filter>
+       <filter-name>charSetFilter</filter-name>
+       <filter-class>edu.imti.eshop.ge.filter.CharSetEncodingFilter</filter-class>
+       <init-param>
+         <param-name>encoding</param-name> 
+         <param-value>UTF-8</param-value>
+       </init-param>
+   </filter>
+   <filter-mapping>
+       <filter-name>charSetFilter</filter-name>
+       <url-pattern>/*</url-pattern>
+   </filter-mapping>
+   
+    <!-- 配置过滤器：后台管理员登录控制 -->
+            
+ <filter>
+    <filter-name>adminLoginFilter</filter-name>
+    <filter-class>edu.imti.eshop.ge.filter.AdminLoginFilter</filter-class>
+ </filter>
+ <filter-mapping>
+     <filter-name>adminLoginFilter</filter-name>
+     <url-pattern>/daemon/servlet/*</url-pattern>
+ </filter-mapping>
+ 
+       
+       
+       <!-- 配置过滤器：前台顾客登录控制  --> 
+            
+ <filter>
+    <filter-name>frontLoginFilter</filter-name>
+    <filter-class>edu.imti.eshop.ge.filter.FrontLoginFilter</filter-class>
+ </filter>
+ <filter-mapping>
+     <filter-name>frontLoginFilter</filter-name>
+     <url-pattern>/front/limit/*</url-pattern>
+ </filter-mapping>
+ 
+     
+ 
+</web-app>

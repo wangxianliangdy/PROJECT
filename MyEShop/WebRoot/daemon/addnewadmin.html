@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="this is my page">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="css/right.css">
+
+	</head>
+
+	<body>
+		<table width="100%" border="0" align="center" cellpadding="0"
+			cellspacing="0">
+			<tr>
+				<td height="30">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td height="24" bgcolor="#353c44">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td>
+											<table width="100%" border="0" cellspacing="0"
+												cellpadding="0">
+												<tr>
+													<td width="6%" height="19" valign="bottom">
+														<div align="center">
+															<img src="images/tb.gif" width="14" height="14" />
+														</div>
+													</td>
+													<td width="94%" valign="bottom">
+														<span class="STYLE1"> 添加管理员的基本信息</span>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<form action="/MyEShop/daemon/servlet/addNewAdminServlet" method="post">
+					<table width="100%" border="0" cellpadding="0" cellspacing="1"
+						bgcolor="#a8c7ce">
+						<tr>
+							<td height="20" bgcolor="#FFFFFF">
+								<div align="center">
+									<span class="STYLE19">
+										管理员名字
+									</span>
+								</div>
+							</td>
+							<td height="20" bgcolor="#FFFFFF" class="STYLE6">
+								<div align="left">
+									<span class="STYLE19">
+										&nbsp;&nbsp;<input type="text" name="name" class="test"/>
+									</span>
+								</div>
+							</td>
+						</tr>
+						
+						<tr>
+							<td height="20" bgcolor="#FFFFFF">
+								<div align="center">
+									<span class="STYLE19">
+										密  码
+									</span>
+								</div>
+							</td>
+							<td height="20" bgcolor="#FFFFFF" class="STYLE6">
+								<div align="left">
+									<span class="STYLE19">
+										&nbsp;&nbsp;<input type="password" name="password" class="test"/>
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td height="20" bgcolor="#FFFFFF">
+								<div align="center">
+									<span class="STYLE19">
+										确认密码
+									</span>
+								</div>
+							</td>
+							<td height="20" bgcolor="#FFFFFF" class="STYLE6">
+								<div align="left">
+									<span class="STYLE19">
+										&nbsp;&nbsp;<input type="password" name="twoInput" class="test"/>
+									</span>
+								</div>
+							</td>
+						</tr>
+						
+						<tr>
+							<td height="20" bgcolor="#FFFFFF">
+								<div align="center">
+									<span class="STYLE19">
+										&nbsp;
+									</span>
+								</div>
+							</td>
+							<td height="20" bgcolor="#FFFFFF" class="STYLE6">
+								<div align="left">
+									<span class="STYLE19">
+										&nbsp;
+										<input type="submit" value="添加管理员" style="border: 1px solid #006699;"/>
+										<input type="reset" value="重填信息" style="border: 1px solid #006699;"/>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</table>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
